@@ -5,8 +5,25 @@ nav ul {
   flex-direction: row;
   justify-content: flex-end;
 }
-nav li {
+nav li a:link {
   margin-left: 15px;
   padding: 15px;
-  background-color: rgb(168, 103, 99);
+}
+.sublist {
+  flex-direction: column;
+  position: absolute;
+  margin-top: 17px;
+  display: none;
+}
+.sublist li a:link {
+  display: block;
+}
+.itemWithDropdown:hover .sublist {
+  display: flex;
+}
+nav a:link {
+  background-color: rgb(131, 163, 151);
+}
+.sublist a:link {
+  background-color: rgb(241, 233, 186);
 }
